@@ -22,6 +22,7 @@ def main():
 
         screen.fill("black")
         ship.draw(screen)
+        ship.update(dt)
         pygame.display.flip()
 
         dt = clock.tick(60) / 1000
